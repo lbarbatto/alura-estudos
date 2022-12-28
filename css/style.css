@@ -18,6 +18,10 @@
     color: #001935;    
     background-image: linear-gradient(rgb(145, 145, 145), rgb(255, 255, 255), rgb(145, 145, 145));
   }
+
+  h1 {
+    font-size: 2rem;
+  }
   
   .header {
     display: flex;
