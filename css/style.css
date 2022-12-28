@@ -100,6 +100,8 @@
   .footer {
     background-color: #001935;
     color: #ffffff;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     font-size: 12px;
     padding: 15px;
@@ -116,7 +118,8 @@
     text-decoration: none;
   }
   .footer a:hover {
-    color: rgb(17, 0, 112);
+    font-size: 130%;
+    color: rgb(51, 182, 229);
     background-color: transparent;
   }
   .footer a:active {
@@ -129,7 +132,7 @@
     width: 100%;
   }
   
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 667px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -144,11 +147,13 @@
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 
+
+
     iframe {
         width: 650px;
-
       }
   }
+
   @media only screen and (min-width: 900px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
@@ -163,4 +168,9 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+
+    .footer {
+      position: fixed;
+    }
+
   }
