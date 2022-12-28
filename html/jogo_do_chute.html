@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br><hr><br>");
+    }
+
+    function mostra(texto) {
+        document.write(texto);
+        pulaLinha();
+        
+    }
+
+    function sorteiaNum() {
+        return Math.round(Math.random() * 10);
+        
+    }
+
+    function jogar(num1) {
+        console.log(num1);
+        
+        var num2 = prompt("Digite um número entre 0 e 10 e tente adivinhar o número misterioso!");
+        var contaChute = 1;
+                
+        while (num1 != num2) {
+            
+
+            if (num1 > num2) {
+                alert("Errou! O número misterioso é maior");
+                num2 = prompt("Digite um número entre 1 e 10 e tente novamente!");
+                contaChute += 1;
+            } else {
+                alert("Errou! O número misterioso é menor");
+                num2 = prompt("Digite um número entre 1 e 10 e tente novamente!");
+                contaChute += 1;
+            }
+        }
+
+        if (num1 == num2) {
+            mostra("Parabéns! O número misterioso é: " + num1);
+            mostra("Total de chutes: " + contaChute);
+        }
+
+        
+    }
+
+jogar(sorteiaNum());
+
+</script>

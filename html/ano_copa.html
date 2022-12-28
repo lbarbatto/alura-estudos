@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+        
+    }
+
+    function mostra(texto) {
+        document.write(texto);
+        pulaLinha();
+        
+    }
+
+    var anoCopa = 1930;
+    var anoLimite = parseInt(prompt("Digite o ano limite para listar todos os anos de Copa:"));
+
+    while (anoCopa <= anoLimite) {
+
+        if (anoCopa == 1942 || anoCopa == 1946) {
+            mostra(anoCopa + " - Cancelada devido a Segunda Guerra Mundial");
+            anoCopa += 4;
+            
+        } else {
+            mostra("Teve copa em: " + anoCopa);
+            anoCopa += 4;
+            
+        }
+
+
+
+        
+    }
+
+    mostra("FIM");
+
+
+
+</script>

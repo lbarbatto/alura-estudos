@@ -1,0 +1,69 @@
+<meta charset="UTF-8">
+
+<h2>Exercício: 01</h2>
+<script>
+
+    document.write("A idade do Flávio pode ser: <br>");
+    document.write("18 <br>");
+    document.write(18 + "<br>");
+    document.write("18" + "20" + "<br>");
+    document.write("18" + 20 + "<br>");
+    document.write(18 + 20 + "<br>");
+    document.write(18 * 20 + "<br>");
+    document.write(18 / 2 + "<br>");
+    document.write(18 - 2 + "<br>");
+    document.write(18 + " / " + 02 + " / " + 2022 + "<br>");
+    document.write("18 / 02 / 2022 <br>");
+    document.write("18" + 20 / 2 + "<br>");
+
+//  Operações matemáticas, concatenações e variáveis.
+
+    var ano = 2022;
+    var nome = "Leopoldo";
+    var idadeLeopoldo = 40;
+    var idadeJoao = 20;
+    var idadePedro = 55;
+
+    document.write("<h2>Exercício: 02</h2>");
+    document.write(nome + " nasceu em: " + (ano - idadeLeopoldo));
+    document.write("<br>");
+    document.write(nome + " faz aniversário dia " + ((3+2)*3+2) + " do mês " + 3*(2+2));
+    document.write("<br>");
+    document.write(nome + " vai completar: " + (ano - 1982) + " anos em " + ano + ".");
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write(nome + " tem " + idadeLeopoldo + " anos.");
+    document.write("<br>");    
+    nome = "Joao";
+    document.write(nome + " tem " + idadeJoao + " anos.");
+    document.write("<br>");    
+    nome = "Pedro";
+    document.write(nome + " tem " + idadePedro + " anos.");
+    document.write("<br>");
+    var mediaIdades = (idadeLeopoldo + idadeJoao + idadePedro)/3
+    document.write("A média das idades é " + Math.round(mediaIdades) + " anos.");
+
+//  Utilizando função.
+
+    function pulaLinha() {
+        document.write("<br><hr><br>");
+    }
+
+    function mostra(texto) {
+        document.write("<big>" + texto + "</big>");
+        pulaLinha();
+        
+    }
+
+    nome = "Leopoldo";
+
+    mostra("<h2>Exercício: 03</h2>");
+
+    mostra(nome + " tem: " + idadeLeopoldo + " anos.")
+
+    mostra("João tem: " + idadeJoao + " anos.");
+
+    mostra("Pedro  tem: " + idadePedro + " anos.")
+
+</script>
